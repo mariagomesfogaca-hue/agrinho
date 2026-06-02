@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark {
+    background-color: #0f1a14;
+    color: #e0f0e0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 6%;
+    background-color: #1e3a2f;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #a8e6a8;
+}
+
+.hero {
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/hero.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slogan {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.cta-btn {
+    padding: 14px 40px;
+    font-size: 1.2rem;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta-btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 4rem 6%;
+}
+
+.bg-light {
+    background-color: #f8f9f8;
+}
+
+body.dark .bg-light {
+    background-color: #1a2a22;
+}
+
+h2 {
+    color: #1e3a2f;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+body.dark h2 {
+    color: #a8e6a8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+body.dark .card {
+    background: #1e2a24;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.vantagens-list {
+    list-style: none;
+}
+
+.vantagens-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+body.dark .vantagens-list li {
+    border-bottom: 1px solid #334d3f;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e3a2f;
+    color: white;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}

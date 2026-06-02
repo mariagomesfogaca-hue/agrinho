@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaCultivo | Novas Culturas Adaptadas ao Clima</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌱 ClimaCultivo</div>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#culturas">Culturas</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+            </ul>
+            <button id="darkModeBtn" class="btn-icon" aria-label="Modo Escuro">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Novas Culturas Adaptadas ao Clima</h1>
+                <p class="slogan">Sementes fortes para um clima em transformação.</p>
+                <button onclick="scrollToSection('culturas')" class="cta-btn">Explorar Culturas</button>
+            </div>
+        </section>
+
+        <!-- Introdução -->
+        <section class="section">
+            <h2>Novas Culturas Adaptadas ao Clima</h2>
+            <p>Com as mudanças climáticas, a agricultura precisa se reinventar. Conheça variedades de plantas mais resistentes ao calor, à seca e às chuvas intensas, desenvolvidas para garantir a produção de alimentos no futuro.</p>
+            <p>O Brasil, com sua grande diversidade climática, já sente os efeitos das alterações no clima. Por isso, cientistas e agricultores estão criando novas culturas mais fortes e adaptadas. Este site apresenta essas soluções para um futuro mais seguro e sustentável.</p>
+        </section>
+
+        <!-- Por que precisamos -->
+        <section class="section bg-light">
+            <h2>Por que precisamos de novas culturas?</h2>
+            <p>As temperaturas estão aumentando, os períodos de seca estão mais longos e as enchentes mais frequentes. As plantas tradicionais muitas vezes não conseguem resistir a essas novas condições.</p>
+            <p>As novas culturas adaptadas são desenvolvidas por meio de melhoramento genético e seleção natural para:</p>
+            <ul id="motivos">
+                <!-- Preenchido via JS -->
+            </ul>
+            <p>Com essas variedades, os agricultores podem continuar produzindo alimentos de qualidade e proteger o meio ambiente.</p>
+        </section>
+
+        <!-- Culturas -->
+        <section id="culturas" class="section">
+            <h2>Culturas que estão mudando o futuro da agricultura</h2>
+            <div class="cards" id="cardsContainer">
+                <!-- Preenchido via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Vantagens -->
+        <section id="vantagens" class="section bg-light">
+            <h2>Vantagens das culturas adaptadas</h2>
+            <ul class="vantagens-list" id="vantagensList">
+                <!-- Preenchido via JavaScript -->
+            </ul>
+        </section>
+
+        <!-- Impacto -->
+        <section id="impacto" class="section">
+            <h2>Impacto positivo no campo e na mesa</h2>
+            <p>Com o uso dessas novas culturas, o agricultor gasta menos recursos, produz mais e ajuda o planeta. O consumidor final ganha alimentos mais saudáveis e com menor impacto ambiental. A adaptação climática não é apenas sobrevivência — é uma oportunidade de construir uma agricultura mais inteligente e sustentável.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ClimaCultivo – Projeto Educacional Agrinho</p>
+        <p>Todos os textos são de autoria própria.</p>
+        <div class="font-controls">
+            <button onclick="changeFont(1)">A+</button>
+            <button onclick="changeFont(-1)">A-</button>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
